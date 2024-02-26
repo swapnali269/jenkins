@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
+                sh 'git init '
                 echo "Successful pull from Git"
                 git 'https://github.com/swapnali269/jenkins.git'
             }
