@@ -4,7 +4,7 @@ pipeline {
         stage('Pull') {
             steps {
                 echo "Successful pull from Git"
-                git 'https://github.com/deepak-umre/jenkins-pipline-with-docker-k8.git'
+                git 'https://github.com/swapnali269/jenkins.git'
             }
         }
         stage('Build') {
@@ -24,9 +24,9 @@ pipeline {
             steps {
                 script {
                     sh '''cp -r /var/lib/jenkins/workspace/deploy/target/*.war .
-                    docker build -t deepakumre/tomcat1 . 
+                    docker build -t swapnali269/studentapp . 
                     docker login 
-                    docker push deepakumre/tomcat1'''
+                    docker push swapnali269/studentapp'''
                 }
             }
         }

@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: deepakumre/tomcat1
+        image: swapnali269/studentapp
         ports:
         - containerPort: 8080
 ...
