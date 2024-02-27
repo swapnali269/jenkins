@@ -24,7 +24,7 @@ pipeline {
             }
             steps {
                 script {
-                    sh '''cp -r /var/lib/jenkins/workspace/deploy/target/*.war .
+                    sh '''cp -r /var/lib/jenkins/workspace/new/*.war .
                     docker build -t swapnali269/studentapp . 
                     docker login 
                     docker push swapnali269/studentapp'''

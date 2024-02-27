@@ -8,7 +8,7 @@ WORKDIR /usr/local/tomcat
 RUN rm -rf webapps/*
 
 # Copy your WAR file into the webapps directory of Tomcat
-COPY ./student.war webapps/
+COPY /root/student.war webapps/
 
 # (Optional) Expose the default Tomcat port
 EXPOSE 8080
