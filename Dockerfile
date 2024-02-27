@@ -1,5 +1,5 @@
 # Use the official Tomcat image from Docker Hub
-FROM tomcat:latest
+FROM tomcat:tomcat:8.5.99-jdk17-temurin-jammy
 
 # Set the working directory inside the container
 WORKDIR /usr/local/tomcat
